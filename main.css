@@ -12,3 +12,24 @@ body {
 p {
     margin-left: 20px;
 }
+
+a, a:visited {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+nav li {
+    list-style-type:square;
+}
+
+footer p{
+    text-align: center;
+}
+
+.homelink {
+    margin-left: 0;
+}

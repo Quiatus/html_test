@@ -10,59 +10,89 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>HTML website</h1>
+    <section id="nav">
+
+        <h1>HTML website</h1>
+
+        <hr>
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Basic html</a>
+                </li>
+                <li>
+                    <a href="#lists">Lists</a>
+                </li>
+                <!-- <li></li>
+                <li></li> -->
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
 
     <hr>
 
-    <h2>testing basic html</h2>
-    <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. 
-        <br>...Veniam dignissimos dolorum quia deserunt quis, hic asperiores. 
-        <br>&nbsp;&nbsp;&nbsp;...Sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
+    <section id="html">
+        <h2>testing basic html</h2>
+        <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. 
+            <br>...Veniam dignissimos dolorum quia deserunt quis, hic asperiores. 
+            <br>&nbsp;&nbsp;&nbsp;...Sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
 
-    <h3>Topic</h3>
-    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Sunt totam tenetur cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+        <h3>Topic 1</h3>
+        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Sunt totam tenetur cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+
+        <h3>Topic 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis"><a href="https://github.com/Quiatus" target="_blank">QCT</a></abbr> <!-- Don't use abbr a lot -->deserunt quis, hic asperiores, sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam ipsam vitae ipsum, voluptatem aliquam nostrum laudantium saepe iste rerum animi dignissimos architecto! Voluptatem necessitatibus sit labore nam harum iste..</p>
+
+        <h3>Topic 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur &lt; adipisicing elit. Sunt &copy; totam tenetur &gt; cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+        <p class="homelink"><a href="#nav">Back to top</a></p>
+    </section>
 
     <hr>
 
-    <h2>New article</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis">QCT</abbr> <!-- Don't use abbr a lot -->deserunt quis, hic asperiores, sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
+    <section id="lists">
+        <h2>Lists</h2>
+        <h3>Ordered list</h3>
 
-    <h3>Topic</h3>
-    <p>Lorem ipsum dolor sit amet consectetur &lt; adipisicing elit. Sunt &copy; totam tenetur &gt; cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
 
+        <h3>Unordered list</h3>
 
+        <ul>
+            <li><a href="index.html" target="_blank">CATS!!!</a></li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis">QCT</abbr> </li>
+            <li><address>
+                Floreda Ride 32<br>
+                Balliada<br>
+                Marrarra 87855
+            </address></li>
+        </ul>
+
+        <h3>Description list</h3>
+
+        <dl>
+            <dt>Item to describe</dt>
+            <dd>Description</dd>
+
+            <dt>Another item to describe</dt>
+            <dd>Another description</dd>
+        </dl>
+        <p class="homelink"><a href="#nav">Back to top</a></p>
+    </section>
 
     <hr>
 
-    <h2>Lists</h2>
-    <h3>Ordered list</h3>
+    <footer id="about">
+        <p>&copy; 2023 Quiatus. Download the <a href="html5.png" download>favicon</a>. Contact me at <a href="mailto:random@email.com">Qtts@ttt.com</a>, or call <a href="tel:+31612345678">+31612345678</a>. Go back  <a href="/">home</a></p>
+    </footer>
 
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-
-    <h3>Unordered list</h3>
-
-    <ul>
-        <li>Item A</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis">QCT</abbr> </li>
-        <li><address>
-            Floreda Ride 32<br>
-            Balliada<br>
-            Marrarra 87855
-        </address></li>
-    </ul>
-
-    <h3>Description list</h3>
-
-    <dl>
-        <dt>Item to describe</dt>
-        <dd>Description</dd>
-
-        <dt>Another item to describe</dt>
-        <dd>Another description</dd>
-    </dl>
 </body>
 </html> 
