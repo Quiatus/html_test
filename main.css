@@ -1,8 +1,14 @@
 html {
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: #333;
     color: aliceblue;
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 20px;
 }
