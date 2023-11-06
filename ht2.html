@@ -207,45 +207,114 @@
             <p class="homelink">Contact us</p>
 
             <form action="https://httpbin.org/get" method="get">
-                <p>
-                    <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required>
-                </p>
+                <fieldset>
+                    <legend> Personal Info </legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required>
+                    </p>
 
-                <p>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
-                </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
 
-                <p>
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="password" required>
-                </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="password" required>
+                    </p>
 
-                <p>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-                </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
 
-                <p>
-                    <label for="age">age:</label>
-                    <input type="number" name="age" id="age" min="18" max="99" step="1" value="18">
-                </p>
+                    <p>
+                        <label for="age">age:</label>
+                        <input type="number" name="age" id="age" min="18" max="99" step="1" value="18">
+                    </p>
 
-                <p>
-                    <label for="coffee">Favorite coffee:</label>
-                    <select name="coffee" id="coffee">
-                        <optgroup label="Black">
-                            <option value="regular" selected>Regular</option>
-                            <option value="espresso">Espresso</option>
-                        </optgroup>
-                        <optgroup label="With milk">
-                            <option value="cappuccino">Cappuccino</option>
-                            <option value="latte">Latte</option>
-                        </optgroup>
-                        <option value="other">Other</option>
-                    </select>
-                </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Favourite Food</legend>
+
+                    <p>
+                        <label for="coffee">Favorite coffee:</label>
+                        <select name="coffee" id="coffee">
+                            <optgroup label="Black">
+                                <option value="regular" selected>Regular</option>
+                                <option value="espresso">Espresso</option>
+                            </optgroup>
+                            <optgroup label="With milk">
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="latte">Latte</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+    
+                    <p>
+                        <label for="pizza">Favorite Pizza:</label>
+                        <input type="text" name="pizza" id="pizza" list="pizza-list">
+                        <datalist id="pizza-list">
+                            <option value="Hawaii">
+                            <option value="Pepperoni">
+                            <option value="Quattro Formaggi">
+                            <option value="Margarita">
+                            <option value="Salami">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos" >
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="hamburger" value="hamburger">
+                        <label for="hamburger">Hamburger</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="hotdog" value="hotdog">
+                        <label for="hotdog">Hotdog</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Pets</legend>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Send a note</legend>
+
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="60" rows="8" placeholder="Type your message here"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </form>
 
             <p class="homelink"><a href="#nav">Back to top</a></p>
