@@ -15,7 +15,7 @@
             <span>HTML </span><img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5 logo" width="200" height="200">
         </div>
     
-        <nav>
+        <nav aria-label="primary-navigation">
             <ul>
                 <li>
                     <a href="#html">Basic html</a>
@@ -26,8 +26,9 @@
                 <li>
                     <a href="#images">Images</a>
                 </li>
-                <!-- <li></li>
-                <li></li> -->
+                <li>
+                    <a href="#tables">Tables</a>
+                </li>
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -37,38 +38,46 @@
     </header>
 
     <main>
-        <section id="html">
+        <article id="html">
             <h2>Testing basic html</h2>
 
-            <h3>Intro</h3>
-            <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. 
-                <br>...Veniam dignissimos dolorum quia deserunt quis, hic asperiores. 
-                <br>&nbsp;&nbsp;&nbsp;...Sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
+            <section>
+                <h3>Intro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. 
+                    <br>...Veniam dignissimos dolorum quia deserunt quis, hic asperiores. 
+                    <br>&nbsp;&nbsp;&nbsp;...Sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
+            </section>
 
-            <h3>Topic 1</h3>
-            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Sunt totam tenetur cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+            <section>
+                <h3>Topic 1</h3>
+                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Sunt totam tenetur cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+            </section>
 
-            <h3>Topic 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis"><a href="https://github.com/Quiatus" target="_blank">QCT</a></abbr> <!-- Don't use abbr a lot -->deserunt quis, hic asperiores, sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam ipsam vitae ipsum, voluptatem aliquam nostrum laudantium saepe iste rerum animi dignissimos architecto! Voluptatem necessitatibus sit labore nam harum iste..</p>
+            <section>
+                <h3>Topic 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis"><a href="https://github.com/Quiatus" target="_blank">QCT</a></abbr> <!-- Don't use abbr a lot -->deserunt quis, hic asperiores, sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam ipsam vitae ipsum, voluptatem aliquam nostrum laudantium saepe iste rerum animi dignissimos architecto! Voluptatem necessitatibus sit labore nam harum iste..</p>
+            </section>
 
-            <h3>Topic 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur &lt; adipisicing elit. Sunt &copy; totam tenetur &gt; cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
-
-            <figure>
-                <figcaption>HTML Code example</figcaption>
-                <p>
-                    <code>
-                        &lt;h1&gt;Hello World!&lt;/h1&gt;
-                    </code>
-                </p>
-            </figure>
+            <section>            
+                <h3>Topic 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur &lt; adipisicing elit. Sunt &copy; totam tenetur &gt; cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+    
+                <figure>
+                    <figcaption>HTML Code example</figcaption>
+                    <p>
+                        <code>
+                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                        </code>
+                    </p>
+                </figure>
+            </section>
 
             <p class="homelink"><a href="#nav">Back to top</a></p>
-        </section>
+        </article>
 
         <hr>
 
-        <section id="lists">
+        <article id="lists">
             <h2>Lists</h2>
 
             <h3>Ordered list</h3>
@@ -77,6 +86,17 @@
                 <li>Item 2</li>
                 <li>Item 3</li>
             </ol>
+
+            <aside>
+                <details>
+                    <summary> 
+                        Check <mark>below</mark> for more.
+                    </summary>
+                    <p>
+                        That is all for now. Check in <time datetime="PT2H">2 hours</time> for mroe. 
+                    </p>
+                </details>
+            </aside>
 
             <h3>Unordered list</h3>
             <ul>
@@ -99,11 +119,11 @@
             </dl>
 
             <p class="homelink"><a href="#nav">Back to top</a></p>
-        </section>
+        </article>
 
         <hr>
 
-        <section id="images">
+        <article id="images">
             <h2>Images</h2>
             <!-- 
                 Notes: 
@@ -122,7 +142,15 @@
             </figure>
 
             <p class="homelink"><a href="#nav">Back to top</a></p>
-        </section>
+        </article>
+
+        <hr>
+
+        <article id="tables">
+            <h2>Tables</h2>
+
+            <p class="homelink"><a href="#nav">Back to top</a></p>
+        </article>
     </main>
 
     <footer id="about">
