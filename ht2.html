@@ -11,9 +11,10 @@
 </head>
 <body>
     <section id="nav">
-
-        <h1>HTML website</h1>
-
+        <div>
+            <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5 logo" width="200" height="200">
+        </div>
+        
         <hr>
     
         <nav>
@@ -23,6 +24,9 @@
                 </li>
                 <li>
                     <a href="#lists">Lists</a>
+                </li>
+                <li>
+                    <a href="#images">Images</a>
                 </li>
                 <!-- <li></li>
                 <li></li> -->
@@ -36,7 +40,9 @@
     <hr>
 
     <section id="html">
-        <h2>testing basic html</h2>
+        <h2>Testing basic html</h2>
+
+        <h3>Intro</h3>
         <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. 
             <br>...Veniam dignissimos dolorum quia deserunt quis, hic asperiores. 
             <br>&nbsp;&nbsp;&nbsp;...Sunt quos nostrum ratione nam numquam assumenda tempore maiores accusantium sint, mollitia quas quam.</p>
@@ -49,6 +55,16 @@
 
         <h3>Topic 3</h3>
         <p>Lorem ipsum dolor sit amet consectetur &lt; adipisicing elit. Sunt &copy; totam tenetur &gt; cupiditate, consequuntur consequatur, adipisci aut neque molestias tempora vel nam itaque quidem enim nihil veritatis reprehenderit iste dolores! Ullam?</p>
+
+        <figure>
+            <figcaption>HTML Code example</figcaption>
+            <p>
+                <code>
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;
+                </code>
+            </p>
+        </figure>
+
         <p class="homelink"><a href="#nav">Back to top</a></p>
     </section>
 
@@ -56,8 +72,8 @@
 
     <section id="lists">
         <h2>Lists</h2>
-        <h3>Ordered list</h3>
 
+        <h3>Ordered list</h3>
         <ol>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -65,7 +81,6 @@
         </ol>
 
         <h3>Unordered list</h3>
-
         <ul>
             <li><a href="index.html" target="_blank">CATS!!!</a></li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos dolorum <abbr title="Quorum Certus Tactis">QCT</abbr> </li>
@@ -77,7 +92,6 @@
         </ul>
 
         <h3>Description list</h3>
-
         <dl>
             <dt>Item to describe</dt>
             <dd>Description</dd>
@@ -85,6 +99,30 @@
             <dt>Another item to describe</dt>
             <dd>Another description</dd>
         </dl>
+
+        <p class="homelink"><a href="#nav">Back to top</a></p>
+    </section>
+
+    <hr>
+
+    <section id="images">
+        <h2>Images</h2>
+        <!-- 
+            Notes: 
+            - img title will show text when hover over image 
+            - adding width and height helps with cumulative layout shift (CLS) - website will load properly and won't resize after the ads load 
+            - loading: lazy - only loads image when it's about to be displayed (when scrolling below the fold (non-visible part of the website))
+        -->
+        <figure>
+            <img src="img/caribbean.jpg" alt="Carribean beach" title="Carribean beach" width="400" height="225" loading="lazy">
+            <figcaption>Tropical beach in Carribean</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/vacation.jpg" alt="Cancun" title="vacation" width="400" height="267" loading="lazy">
+            <figcaption>A Carribean vacation image</figcaption>
+        </figure>
+
         <p class="homelink"><a href="#nav">Back to top</a></p>
     </section>
 

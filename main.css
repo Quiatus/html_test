@@ -23,13 +23,27 @@ a:hover {
 }
 
 nav li {
-    list-style-type:square;
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid gold;
 }
 
-footer p{
+nav li:first-of-type {
+    padding-left: 0;
+} 
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+footer p, h1, h2{
     text-align: center;
 }
 
 .homelink {
     margin-left: 0;
+}
+
+#nav div {
+    text-align: center;
 }
