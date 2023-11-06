@@ -45,5 +45,14 @@ footer p, h1, h2{
 }
 
 #nav div {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#nav span {
+    font-size: 80px;
+    font-weight: bold;
+    margin-right: 20px;
 }
