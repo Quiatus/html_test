@@ -42,14 +42,18 @@ nav li {
     border-right: 1px solid gold;
 }
 
-
-
 nav li:last-of-type {
     border-right: none;
 }
 
 footer p, h1, h2{
     text-align: center;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }
 
 .homelink {
