@@ -72,3 +72,18 @@ table, tr, th, td, caption {
     font-weight: bold;
     margin-right: 20px;
 }
+
+input, select {
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid aliceblue;
+    margin-left: 10px;
+    padding: 3px 6px;
+    outline: none;
+    font: inherit;
+    color: aliceblue;
+}
+
+input:focus {
+    outline: auto;
+}
